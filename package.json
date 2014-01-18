@@ -1,0 +1,21 @@
+{
+  "name": "tea-badger",
+  "version": "0.1.0",
+  "description": "Order tea or coffee in the Badger office",
+  "dependencies": {
+    "koa": "",
+    "prelude-ls": "",
+    "config": "",
+    "debug": "",
+    "elasticsearch": ""
+  },
+  "devDependencies": {
+    "mocha": "",
+    "chai": "",
+    "grunt": "",
+    "grunt-cli": "",
+    "grunt-livescript": "",
+    "grunt-mocha-test": "",
+    "grunt-shell": ""
+  }
+}

@@ -1,0 +1,6 @@
+%YAML 1.2
+---
+service_name: tea-dev
+app_env: development # port 3000
+path: /vagrant
+log: /vagrant/app.log

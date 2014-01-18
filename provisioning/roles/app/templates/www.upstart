@@ -1,0 +1,13 @@
+description "FOS Website"
+author  "stuart.harris@red-badger.com"
+
+start on runlevel 3
+stop on shutdown
+
+respawn
+
+env NODE_ENV={{app_env}}
+export NODE_ENV
+
+chdir {{path}}/current
+exec su -s /bin/sh -c 'exec "$0" "$@"' www-data -- node src/index  >> {{log}} 2>&1

@@ -1,0 +1,5 @@
+%YAML 1.2
+---
+virtual_hosts:
+  - hostname: tea.red-badger.com
+    port: 3001

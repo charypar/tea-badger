@@ -1,0 +1,24 @@
+%YAML 1.2
+---
+- name: switch npm registry
+  shell: "npm set registry http://registry.npmjs.eu/"
+  tags: dependencies
+
+- name: switch npm registry for root as well
+  shell: "npm set registry http://registry.npmjs.eu/"
+  sudo: no
+  tags: dependencies
+
+- name: install dependencies
+  shell: "npm install --no-bin-links chdir=/vagrant"
+  sudo: no
+  tags: dependencies
+
+- name: install global packages
+  shell: "npm install -g {{item}}"
+  with_items:
+    - grunt-cli
+    - LiveScript
+  sudo: yes
+  tags: dependencies
+

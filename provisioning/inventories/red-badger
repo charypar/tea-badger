@@ -1,0 +1,23 @@
+[tea.red-badger.com]
+tea.red-badger.com user=ubuntu
+
+# app environments
+
+[production:children]
+webservers
+
+# provisioning
+
+[webservers:children]
+red-badger
+
+# host group
+
+[red-badger:children]
+tea.red-badger.com
+
+
+
+
+
+

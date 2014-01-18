@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+- name: compile Gruntfile
+  shell: "lsc -c Gruntfile.ls chdir=/vagrant"
+  tags: build
+
+- name: run grunt command
+  shell: "grunt chdir=/vagrant"
+  tags: build
+

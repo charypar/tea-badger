@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+service_name: tea
+app_env: production # port 3001
+grunt_env: prod
+path: /var/www/fos-website
+log: /var/log/www/fos-website.log

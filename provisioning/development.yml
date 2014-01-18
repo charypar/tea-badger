@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+- hosts: webservers
+  user: "{{user}}"
+  roles:
+    - role: app-dev
+  vars_files:
+    - environment_vars/development

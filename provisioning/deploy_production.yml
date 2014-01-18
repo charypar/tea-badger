@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+- hosts: production
+  user: "{{user}}"
+  roles:
+    - role: app
+  vars_files:
+    - environment_vars/production
+
