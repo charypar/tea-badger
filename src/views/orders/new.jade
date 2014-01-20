@@ -2,3 +2,33 @@ extends ../../layouts/application.jade
 
 block content
   h1 I would like a…
+
+  form(action='/orders/create')
+    div.btn-toolbar
+      div.btn-group.btn-group-lg.kind
+        label(for='kind') Dring
+        input(type='hidden', name='order[kind]', id='kind', value='tea')
+
+        button.btn.btn-default(type='button', data-target='#kind', data-value='tea') Tea
+        button.btn.btn-default(type='button', data-target='#kind', data-value='coffee') Coffee
+
+      div.btn-group.btn-group-lg.milk
+        label(for='milk') Milk
+        input(type='hidden', name='order[milk]', id='milk', value='0')
+
+        button.btn.btn-default(type='button', data-target='#milk', data-value='0') No
+        button.btn.btn-default(type='button', data-target='#milk', data-value='1') A bit
+        button.btn.btn-default(type='button', data-target='#milk', data-value='2') A lot
+
+      div.btn-group.btn-group-lg.sugar
+        label(for='milk') Sugar
+        input(type='hidden', name='order[sugar]', id='sugar', value='0')
+
+        button.btn.btn-default(type='button', data-target='#sugar', data-value='0') No
+        button.btn.btn-default(type='button', data-target='#sugar', data-value='1') 1
+        button.btn.btn-default(type='button', data-target='#sugar', data-value='2') 2
+
+    div.btn-group.btn-group-lg.submit
+      button.btn.btn-success(type='submit') Order
+
+

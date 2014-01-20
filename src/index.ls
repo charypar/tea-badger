@@ -20,10 +20,11 @@ app.use express.static path.join __dirname, 'assets/'
 
 app.get '/', routes.orders.index
 
+app.get '/orders/new', routes.orders.new
+
 app.get '/orders', routes.orders.index
 app.get '/orders/:state', routes.orders.index
 
-app.get '/orders/new', routes.orders.new
 app.post '/orders', routes.orders.create
 
 app.put '/order/:id', routes.orders.update

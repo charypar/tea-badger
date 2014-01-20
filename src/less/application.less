@@ -20,6 +20,7 @@
 // Components, just the ones we use
 @import "bootstrap/navs.less";
 @import "bootstrap/navbar.less";
+@import "bootstrap/button-groups.less";
 
 // Utility classes
 @import "bootstrap/utilities.less";
@@ -38,5 +39,33 @@
     border-bottom: 7px solid @badger-red;
     padding-bottom: 8px;
     color: #fff;
+  }
+}
+
+h1 {
+  padding-bottom: 1em;
+}
+
+form {
+  .btn-toolbar {
+    .btn-group {
+      padding-top: 50px;
+      padding-right: 15px;
+      position: relative;
+
+      label {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      & > .btn:first-of-type {
+        .border-left-radius(6px) !important;
+      }
+    }
+  }
+
+  .btn-group.submit {
+    padding-top: 30px;
   }
 }
