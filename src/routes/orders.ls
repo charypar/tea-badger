@@ -6,7 +6,7 @@ module.exports = do
     res.render('orders/index');
 
   new: (req, res, next) ->
-    void
+    res.render('orders/new');
 
   create: (req, res, next) ->
     void

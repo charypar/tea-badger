@@ -2,6 +2,44 @@ doctype html
 
 html
   head
+    title Tea Badger | What Are you drinking?
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', media='screen', href='/css/application.css')
   body
-    block content
+    header
+      nav.navbar.navbar-inverse.navbar-static-top(role='navigation')
+        div.container
+          div.navbar-header
+            button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tea-badger-navbar")
+              span(class="sr-only") Toggle navigation
+              span(class="icon-bar")
+              span(class="icon-bar")
+              span(class="icon-bar")
+
+            a(class="navbar-brand" href="/") Tea Badger
+
+          div.collapse.navbar-collapse#tea-badger-navbar
+            ul.nav.navbar-nav
+              li
+                a(href="/orders") Orders
+
+            div.nav.navbar-right
+              ul.nav.navbar-nav
+                li
+                  a
+                    span(class="glyphicon glyphicon-user")
+                    | &nbsp;&nbsp;A Red Badger
+
+              p.navbar-form.navbar-right
+                a(href="/orders/new")
+                  button.btn.btn-success Order a drink!
+
+
+
+
+    div.main-container
+      section.content.container
+        block content
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js')
