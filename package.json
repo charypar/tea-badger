@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "description": "Order tea or coffee in the Badger office",
   "dependencies": {
-    "koa": "",
     "prelude-ls": "",
+    "express": "",
+    "jade": "",
     "config": "",
     "debug": "",
+    "js-yaml": "",
     "elasticsearch": ""
   },
   "devDependencies": {
@@ -15,6 +17,7 @@
     "grunt": "",
     "grunt-cli": "",
     "grunt-livescript": "",
+    "grunt-contrib-less": "",
     "grunt-mocha-test": "",
     "grunt-shell": ""
   }

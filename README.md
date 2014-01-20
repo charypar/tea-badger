@@ -50,8 +50,9 @@ To start it and then open it in your browser at [http://dev.tea-badger.local](ht
 
 ### The tech
 
-Tea Badger is built on node.js, using [Koa]() and stores orders in [Elastic Search](). The frontend uses
-[Twitter Bootstrap]() to make it pretty and quick to build. We will need better design at some point.
+Tea Badger is built on node.js, using [Express]() (but the plan is to switch to Koa once LiveScript supports
+generators) and stores orders in [Elastic Search](). The frontend uses [Twitter Bootstrap]() to make things
+pretty and quick to build. We will need better design at some point.
 
 For live streaming Tea Badger uses [socket.io](http://socket.io/), but feel free to change that.
 
